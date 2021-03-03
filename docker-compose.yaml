@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  wms-preview:
+    build: .
+    image: sourcecheck/wms-preview
+    container_name: sc-wms-preview
+    env_file: 
+      - .env.build
+      
+networks:
+  default:
+    external:
+      name: webproxy

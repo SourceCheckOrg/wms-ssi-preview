@@ -1,0 +1,15 @@
+.pdfcontainer {
+  display: flex;
+  justify-content: center;
+  user-select: none;
+}
+
+.controls {
+  margin: 20px;
+}
+
+@media print {
+  .pdfcontainer {
+    display: none;
+  }
+}

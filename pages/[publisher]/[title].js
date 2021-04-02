@@ -23,7 +23,6 @@ export default function Publication({ publicationData }) {
 
 export async function getServerSideProps({ params }) {
   const publicationData = await getPublicationData(params.publisher, params.title);
-  console.log('PUBLICATION_DATA', publicationData);
   return {
     props: {
       publicationData: publicationData,
